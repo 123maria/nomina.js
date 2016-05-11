@@ -1,0 +1,10 @@
+body {
+    
+    background: grey;
+}
+.pantalla {
+    width: 100%;
+    max-width: 900px;
+    height: 15px;
+    border: 0px 0px 0px 3px solid grey;
+}

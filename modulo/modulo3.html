@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+     <head>
+        <meta charset="utf-8"/>
+        <title>Sistema de nomina</title>
+        <meta name="description" content="">
+        <!-- Mobile Specific Metas
+    ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       
+        <!-- Bootstrap -->
+       
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="miestilo.css"/>
+        <script type="text/javascript" src="validar.js"></script>
+    </head>
+    <body>
+      <header>
+        
+    <div class="nav">
+      <ul>
+        <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Datos  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="modulo1.html">Datos Generales </a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo2.html">Ubicacion</a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo3.html">Sueldo</a></li>
+                <li class="divider"></li>
+                <li><a href="modulo4.html">Expediente</a></li>
+              </ul>
+            </li>
+          <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Canvios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                 <li class="tutorials"><a class="active" href="vacaciones.html">Vacaciones</a></li>
+                  <li class="divider"></li>
+                <li class="about"><a href="licenciamedica.html">Licencia Medica</a></li>
+                  <li class="divider"></li>
+                 <li class="news"><a href="modificacionsueldo.html">Modificacion de Sueldo</a></li>
+                  <li class="divider"></li>
+                <li class="contact"><a href="incidencia.html">Incidencia</a></li>
+              </ul>
+            </li>
+       
+          <li class="contact"><a href="cierrenomina.html"> Nomina</a></li>
+      </ul>
+    </div>
+  </header>
+          
+        <section class="container">
+            <header class="header">
+              
+                    <ul class="nav navtabs"  class=" navbar navbar-inverse">
+                        <li class="active"><a href="modulo1.html">Datos generales</a></li>
+                        <li><a href="modulo2.html">Ubicacion</a></li>
+                         <li><a href="modulo3.html">Sueldo</a></li>
+                         <li><a href="modulo4.html">Expediente</a></li>
+                    </ul>
+               
+            </header>
+           <form method="post" action="" name="formulario3">
+                 <div class="contentm3">
+                     <label for="fecha">Fecha de Ingreso</label>
+                    <input type="date" class="form-control" name="fecha" id="fecha" placeholder="aaaa-mm-dd" title="Siga el formato de la fecha" pattern="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$" style="width: 90%; float: left;"/>
+                 </div>
+               <div class="contenm3">
+               <div class="mensual" >
+                   <label for="mensual" style="width: 80%; float: left;">Sueldo Mensual</label>
+                   <input type="text" name="mensual" id="mensual" class="form-control"  onkeypress="return soloparanumeros(event)" style="width: 40%; float: left; ">
+               </div>
+                   <div class="mensual" >
+                   <label for="diario" style="width: 80%; float: left;">Sueldo Diario</label>
+                   <input type="text" name="diario" id="diario" class="form-control" onkeypress="return soloparanumeros(event)" style="width: 40%; float: left; ">
+               </div>
+               </div>
+               <div class="contem3">
+               <label  style="width: 80%; float: left;">Forma de Pago</label>
+        
+                   <div class="pago">
+                    
+                            <label for="credito" style="width: 90%;"><input type="radio" name="formapago" autocomplete="off" checked id="credito" value="credito">Credito a Cuenta</label>
+                            <label for="cheque" style="width: 90%;"><input type="radio" name="formapago" id=" cheque" value="cheque">Cheque</label>
+                            <label for="efetivo" style="width: 90%;"><input type="radio" name="formapago" id=" efetivo" value="efetivo">Efetivo</label>
+                      
+                  </div>
+                   <div class="cuenta" style="float: left;">
+                       <label for="cuenta" style="width: 80%; float: left;">Cuenta Bancaria</label>
+                       <input type="text" name="cuenta" id="cuenta" class="form-control" style="width: 30%;">
+                   </div>
+               </div>
+               <div class="contm3">
+                   <label for="observacionesemple" style="width: 80%; float: left;">Observaciones del empleado</label>
+                       <select multiple name="observacines" disabled id="observacines" size="8" class="form-control" style="width: 100%;">
+                             <option value=""></option>
+                             <option value="" ></option>
+                             <option value="" ></option>
+                             <option value=""></option>
+                        </select>
+               </div>
+             <section class="contenidom3">
+                        
+                                    <button type="submit" class="btn btn-inverse" onclick="return validar3()" >
+                                    <span class="glyphicon glyphicon-floppy-saved"></span>Gardar
+                                    </button>
+                                    <button type="button" class="btn btn-inverse" onclick="" >
+                                    <span class="glyphicon glyphicon-plus-sign"></span>Agregar
+                                    </button>
+                                   <button type="button" class="btn btn-inverse" onclick="reset()" >
+                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
+                                    </button>
+                                     <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" >
+                                    <span class="glyphicon glyphicon-log-out"></span>Salir
+                                    </button></a>
+                                </section> 
+           </form>
+                   
+           </section>
+
+        
+      
+    </body>
+</html>

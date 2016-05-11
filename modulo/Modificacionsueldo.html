@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sistema de nomina</title>
+        <meta name="description" content="">
+        <!-- Mobile Specific Metas
+    ================================================== -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="miestilo.css"/>
+        <script type="text/javascript" src="validar.js"></script>
+    </head>
+    <body>
+       <header>
+        
+    <div class="nav">
+      <ul>
+        <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Datos  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="modulo1.html">Datos Generales </a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo2.html">Ubicacion</a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo3.html">Sueldo</a></li>
+                <li class="divider"></li>
+                <li><a href="modulo4.html">Expediente</a></li>
+              </ul>
+            </li>
+          <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Canvios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                 <li class="tutorials"><a class="active" href="vacaciones.html">Vacaciones</a></li>
+                  <li class="divider"></li>
+                <li class="about"><a href="licenciamedica.html">Licencia Medica</a></li>
+                  <li class="divider"></li>
+                 <li class="news"><a href="modificacionsueldo.html">Modificacion de Sueldo</a></li>
+                  <li class="divider"></li>
+                <li class="contact"><a href="incidencia.html">Incidencia</a></li>
+              </ul>
+            </li>
+       
+          <li class="contact"><a href="cierrenomina.html"> Nomina</a></li>
+      </ul>
+    </div>
+  </header>
+        
+            <section class="container">
+                <header class="header">
+              
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="modificacionsueldo.html">Modificacion</a></li>
+                        <li><a href="#">Historial</a></li>
+                      
+                    </ul>
+               
+            </header>
+            </br>
+                <form name="modificacions" method="post">
+                <div class="contenidoms1">
+                    <div class="contentms1">
+                        
+                         <label for="año">Fecha:</label><input type="date" name="fechams1" id="fechams1" class="form-control" style="width: 40%; "  placeholder="aaaa-mm-dd" title="Siga el formato de la fecha" pattern="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$" />
+                        
+                 </div>
+                    <br>
+                    <div class="contenidoms2">
+                        <label style="width: 98%;">Empledo</label>
+                        
+                            <input type="text" name="empleadoms" id="empleadoms" class="form-control" style="width: 25%; float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-inverse" >...</button>
+                           <input type="text" name="empleadoms2" id="empleadoms2" class="form-control" style="width: 60%; float: right;" />
+                            <label style="width: 40%;">Fecha de Ingreso</label><label style="width: 60%;">Sueldo Actual</label>
+                        <div class="fechams">
+                        <input type="date" name="fechams" class="form-control" id="fechams" placeholder="aaaa-mm-dd" title="Siga el formato de la fecha" pattern="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$" style="width: 60%;"/>
+                        </div>
+                        <div class="sueldoms">
+                        <input type="text" name="sueldoms" id="sueldoms" onkeypress="return soloparanumeros(event)" class="form-control" style="width: 80%; "/>
+                        </div>
+                       <div class="espacio">
+                           <label></label>
+                       </div>
+                    </div>
+                    <br>
+                    <div class="contenidoms3">
+                       <label style="width: 95%;">Modificaciones</label> 
+                       
+                        <label style="width:10%; float: left;">sueldo</label><input type="text" name="sueldosms" id="sueldosms" class="form-control" onkeypress="return soloparanumeros(event)" style="width: 30%; float: left;">
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sueldo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualizado</label><input type="text" name="sueldoactums" id="sueldoactums" class="form-control" onkeypress="return soloparanumeros(event)" style="width: 30%; float: right;"> 
+                       
+                    </div>
+                    
+                </div>
+                    <br>
+                   
+                    <section class="contenidomms">
+                        
+                                   <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-log-out"></span>Salir
+                                    </button></a>
+                                    <button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-print"></span>Imprimir
+                                    </button>
+                                   <button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-trash"></span>Eliminar
+                                    </button>
+                                     <button type="button" class="btn btn-inverse" onclick="reset()"  style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
+                                    </button>
+                                    <button type="submit" class="btn btn-inverse" onclick="return validar7()"  style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-floppy-saved"></span>Gardar
+                                    </button>
+                                </section> 
+                    </form>
+                
+       </section>
+     
+
+       
+        
+        
+
+    </body>
+</html>

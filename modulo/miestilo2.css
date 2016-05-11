@@ -1,0 +1,42 @@
+
+/* make sidebar nav vertical */ 
+@media (min-width: 600px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 45px;
+    padding-bottom: 12px;
+  }
+}
+
+.aliniar{
+    width: 20%;
+    float: left;
+}
+.aliniar2{
+    width:  70%;
+    float: left;
+}
+ ul li a:active, a:hover{
+    outline: 0;
+     background: #337ab7 !important;
+     -moz-box-shadow: 0 -5px 10px #777; -webkit-box-shadow: 0 -5px 10px #777;
+	background: -webkit-gradient(
+		linear, right bottom, left top, color-stop(0, #337ab7), color-stop(0.72, #337ab7)) !important;
+	background: -moz-linear-gradient(
+		right bottom, #337ab7 0%, #337ab7 72%) !important;
+	background-color:#fff !important;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+         <meta charset="utf-8" />
+        <title>Sistema de nomina</title>
+        <meta name="description" content="">
+        <!-- Mobile Specific Metas
+    ================================================== -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="miestilo.css"/>
+        <script type="text/javascript" src="validar.js"></script>
+    </head>
+    <body>
+        <header>
+        
+    <div class="nav">
+      <ul>
+        <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Datos  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="modulo1.html">Datos Generales </a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo2.html">Ubicacion</a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo3.html">Sueldo</a></li>
+                <li class="divider"></li>
+                <li><a href="modulo4.html">Expediente</a></li>
+              </ul>
+            </li>
+          <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Canvios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                 <li class="tutorials"><a class="active" href="vacaciones.html">Vacaciones</a></li>
+                  <li class="divider"></li>
+                <li class="about"><a href="licenciamedica.html">Licencia Medica</a></li>
+                  <li class="divider"></li>
+                 <li class="news"><a href="modificacionsueldo.html">Modificacion de Sueldo</a></li>
+                  <li class="divider"></li>
+                <li class="contact"><a href="incidencia.html">Incidencia</a></li>
+              </ul>
+            </li>
+       
+          <li class="contact"><a href="cierrenomina.html"> Nomina</a></li>
+      </ul>
+    </div>
+  </header>
+          
+        <section class="container">
+            <header class="header" class="tabbable">
+              
+                    <ul class="nav navtabs">
+                        <li class="active"><a href="modulo1.html">Datos generales</a></li>
+                        <li><a href="modulo2.html">Ubicacion</a></li>
+                         <li><a href="modulo3.html">Sueldo</a></li>
+                         <li><a href="modulo4.html">Expediente</a></li>
+                    </ul>
+               
+            </header>
+           <form method="post" action="" name="formulario4" >
+                <div class="contenm4">
+                    <label style="width: 29%; float: left;">Obsevaciones</label>
+                    <div class="obsvaciones">
+                        <label for="escaner" style="float: left;">Escaner:</label>
+                        <select name="escaner" id="escaner" class="form-control" style="width: 45%; margin: 2px;">
+				                   <option selected="selected">-Selecione-</option>
+			                       <option value=".">...</option>
+                                   <option value=".">...</option>
+			                       <option value=".">...</option>
+                       </select>
+                    </div>
+                    <div class="obsevacion">
+                    <textarea name="obsevaciones" id="observaciones" class="form-control" style="width: 55%; float: left; "></textarea>
+
+                     <button type="button" class="btn btn-inverse" style="margin: 25px;">Digitalizar</button>
+                      <button type="button" class="btn btn-inverse" style="margin: 25px;">Adjuntal</button>
+                    </div>
+                </div><br>
+              <table class="table table-bordered table-hover table-responsive">
+                <thead>
+                <tr>
+                    <th>espediente</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td></td>
+                    
+                </tr>
+                  <tr>
+                    <td></td>
+                   
+                </tr>
+             </tbody>
+           </table>
+               
+               </div>
+                <section class="contenidom4">
+                        
+                                    <button type="submit" class="btn btn-inverse" onclick="return validar4()" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-floppy-saved"></span>Gardar
+                                    </button>
+                                    <button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>Agregar
+                                    </button>
+                                   <button type="button" class="btn btn-inverse" onclick="reset()" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
+                                    </button>
+                                     <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-log-out"></span>Salir
+                                    </button></a>
+                                </section> 
+           </form>
+                   
+           </section>
+
+        
+    </body>
+</html>

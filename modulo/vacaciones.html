@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sistema de nomina</title>
+        <meta name="description" content="">
+        <!-- Mobile Specific Metas
+    ================================================== -->
+      
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="miestilo.css"/>
+        <script type="text/javascript" src="validar.js"></script>
+        
+    </head>
+    <body>
+      <header>
+        
+    <div class="nav">
+      <ul>
+        <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Datos  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="modulo1.html">Datos Generales </a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo2.html">Ubicacion</a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo3.html">Sueldo</a></li>
+                <li class="divider"></li>
+                <li><a href="modulo4.html">Expediente</a></li>
+              </ul>
+            </li>
+          <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Canvios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                 <li class="tutorials"><a class="active" href="vacaciones.html">Vacaciones</a></li>
+                  <li class="divider"></li>
+                <li class="about"><a href="licenciamedica.html">Licencia Medica</a></li>
+                  <li class="divider"></li>
+                 <li class="news"><a href="modificacionsueldo.html">Modificacion de Sueldo</a></li>
+                  <li class="divider"></li>
+                <li class="contact"><a href="incidencia.html">Incidencia</a></li>
+              </ul>
+            </li>
+       
+          <li class="contact"><a href="cierrenomina.html"> Nomina</a></li>
+      </ul>
+    </div>
+  </header>
+          
+            <section class="container">
+                <header class="header">
+              
+                    <ul class="nav nav-tabs">
+                        <li><a href="#">Vacaciones</a></li>
+                       
+                    </ul>
+               
+            </header>
+            </br>
+                <form method="post" id="vacaciones" name="vacaciones">
+                    <div class="contenidov">
+                        <label for="mes" >Fecha de inicio:</label><input type="month" name="mes" id="mes" class="form-control" style="width: 50%; float: right;"/>
+                    </div>
+                   
+                    <div class="contenidv">
+                          <button type="button" class="btn btn-inverse" onclick="" >
+                                    <span class="glyphicon glyphicon-play"></span>Inicial
+                                    </button>
+                    </div>
+                    <div class="conteniv">
+                        <label for="fechaciere">fecha de cierre:</label><input type="datetime" name="fechaciere" id="fechaciere"  class="form-control" style="width: 50%; float: right;"/>
+                    </div>
+                    <br>
+                    <div class="contentv">
+                        <label for="codigo" style="width: 37%; float: left;">Codigo</label><label style="width: 60%; float: left;">Nombre</label>
+                        <input type="text" name="codigo" id="codigo" class="form-control" style="width: 30%; float: left; margin: 3px;"/><button class="btn btn-default" style=" float: left; margin: 3px;">...</button>
+                        
+                         
+                        <input type="text" name="nombre" id="nombre" onkeypress="return soloparaletras(event)"  class="form-control" style="width: 45%; float: left;"/>
+                         <button type="button" class="btn btn-inverse" onclick="" style="margin: 15px;" >
+                                    <span class="glyphicon glyphicon-plus"></span>Agregar
+                                    </button>
+                        
+                        
+                        
+                       <label style="width: 35%; float: left;">Fecha de Ingreso</label> <input type="date" name="fechaingreso" id="fechaingreso" class="form-control" placeholder="aaaa-mm-dd" title="Siga el formato de la fecha" pattern="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$" style="width: 15%; float: left; margin: 3px;"/>
+                        <label style="float: left; margin: 10px;">Sueldo Mensual</label><input type="text" name="sueldo" id="sueldo" onkeypress="return soloparanumeros(event)" class="form-control" style="width: 15%; float: left; margin: 3px;"/>
+                   
+                         <label style="width: 40%; float: left">
+                          <input name="bonovacacional" type="checkbox"/> Bono Vacacional </label>
+                    </div>
+                  
+        
+	        <table class="table table-bordered table-hover table-responsive">
+                <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Trabaja sus vaciones</th>
+                    <th>Total</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+             </tbody>
+           </table>
+    
+            <div class="Totalempleadov">
+                <label style="float: left;">Total Empleados:</label><input type="text" name="templedo" id="templeado" onkeypress="return soloparanumeros(event)" class="form-control" style="float: left; width: 50%;">
+            </div>
+ 
+
+
+                    <section class="contenidom3">
+                         <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-log-out"></span>Salir
+                                    </button></a>
+                                    <button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-print"></span>Imprimir
+                                    </button>
+                                   <button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-ok"></span>Aceptar
+                                    </button>
+                                </section> 
+                </form>
+       </section>
+     
+
+       
+        
+        
+    </body>
+</html>

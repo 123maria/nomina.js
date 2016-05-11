@@ -1,0 +1,644 @@
+body {
+    background:#A1CAF1;
+}
+.container{
+    width: 80%;
+    padding-bottom: 15px;
+    background: #DBE9F4;
+    float: left;
+    box-shadow: 2px 2px 2px grey;
+    height: auto;
+    margin: 90px;
+    
+}
+
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navtabs{
+   border-bottom: 1px solid #ddd;
+}
+ ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+*{
+    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+.navtabs li{
+    float: left;
+}
+.navtabs > li.active > a, .navtabs > li.active > a:focus, navtabs > li.active > a:hover{
+    color: #555;
+    cursor: default;
+    background-color:#fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;    
+}
+.navtabs > li > a:hover {
+    -moz-box-shadow: 0 -5px 10px #337ab7; -webkit-box-shadow: 0 -5px 10px #337ab7;
+	background: -webkit-gradient(
+		linear, right bottom, left top, color-stop(0, #337ab7), color-stop(0.72, #337ab7)) !important;
+	background: -moz-linear-gradient(
+		right bottom, #337ab7 0%, #337ab7 72%) !important;
+	background-color: #337ab7 !important;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;
+}
+.navtabs  ul li:first-child a { -moz-border-radius-topleft: 12px; -webkit-border-top-left-radius:12px; }
+.navtabs ul li:last-child a { -moz-border-radius-topright: 12px; -webkit-border-top-right-radius:12px; }
+.nav > li > a:focus, .nav > li > a:hover{
+    text-decoration: none;
+    background-color: #eee;
+}
+.navtabs > li > a{
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    
+}
+.navtabs ul li a:active, a:hover{
+    outline: 0;
+     background: #337ab7 !important;
+     -moz-box-shadow: 0 -5px 10px #777; -webkit-box-shadow: 0 -5px 10px #777;
+	background: -webkit-gradient(
+		linear, right bottom, left top, color-stop(0, #337ab7), color-stop(0.72, #337ab7)) !important;
+	background: -moz-linear-gradient(
+		right bottom, #337ab7 0%, #337ab7 72%) !important;
+	background-color:#fff !important;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;
+}
+a:focus, a:hover{
+    color: #23527c;
+    text-decoration: underline;
+}
+a:focus{
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+a{
+    background: transparent;
+}
+a{
+    color: #337ab7;
+    text-decoration: none;
+}
+.nav:after, nav:before{
+    display: table;
+    content: "";
+}
+.nav:after{
+    clear: both;
+}
+.contenidos{
+    width: 70%;
+     box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+     font-family: Calibri;
+    
+}
+.marco{
+    padding:8px;
+   background-color: #f5f5f5;
+   width: 150px;
+   border-bottom: 1px solid #999999;
+   border-right: 1px solid #999999; 
+}
+.marco{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 200px; 0 0 8px rgba(0, 0, 0, .8);
+    margin: 10px;
+    float: left;
+}
+img {
+    border: 0;
+}
+img{
+    vertical-align: middle;
+}
+.containt{
+    width: 55%;
+    height: 150px;
+    margin: 2px;
+    float: left;
+     font-family: Calibri;
+}
+.containt label {
+    margin: 3px;
+}
+
+.contenido{
+    width: 20%;;
+    float: right;
+    padding: 5px;
+    font-family: Calibri;
+}
+.conten{
+    
+    width: 28%;
+    float: right;
+    padding: 10px;
+     font-family:Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contrnido3{
+    width: 70%;
+    float: left;
+    margin: 2px;
+    font-family: Calibri;
+     box-shadow: 0px 0px 1px #A9A9A9;
+}
+
+.conten3{
+    width: 38%;
+    float: left;
+    margin: 2px;
+}
+.content3{
+    width: 60%;
+    float: right;
+    margin: 2px;
+}
+.contenido4 {
+    width: 28%;
+    float: right;
+    font-family: Calibri;
+     box-shadow: 0px 0px 1px #A9A9A9; 
+}
+.contenido5 {
+    width: 70%;
+    float: left;
+  box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenidom2{
+    width: 50%;
+    padding: 10px;
+    font-family: Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+
+}
+.contentm2 {
+    width: 50%;
+    padding: 10px;
+    font-family: Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+    float: right;
+}
+
+.contenm2{
+    width: 100%;
+    float: left;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+}
+.contem2{
+    width: 68%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+    float: right;
+}
+.contm2{
+    width: 60%;
+    float: left;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+}
+.conm2{
+    width: 37%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+   box-shadow: 0px 0px 1px #A9A9A9;
+    float: right;
+}
+.contentm3{
+     width: 20%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+}
+.contenm3{
+     width: 79%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+}
+.mensual {
+    width: 45%;
+    float: left;
+}
+.contem3{
+    width: 99%;
+    margin: 3px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+}
+.pago{
+   width: 25%;
+   float: left; 
+}
+.cuenta{
+    width: 75%;
+    float: right;
+}
+.contm3{
+     width: 99%;
+    margin: 3px;
+    padding: 10px;
+    font-family: Calibri;
+     box-shadow: 0px 0px 1px #A9A9A9;
+    float: left;
+}
+.contenidom3{
+    width: 64%;
+    margin: 1px;
+    padding: 5px;
+    float: left;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenidomms{
+     width: 97%;
+    margin: 1px;
+    padding: 5px;
+    float: left;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenm4{
+      width: 99%;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.escaner{
+    width: 60%;
+    margin: 2px;
+}
+.obsevacion{
+    width: 100%;
+    margin: 2px;
+
+   
+}
+.expedientes{
+    width: 99%;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+
+#div1 {
+     overflow:scroll;
+     height:300px;
+     width: 80%;
+     margin: 50px;
+     
+}
+#div1 table {
+    width:80%;
+    background-color:#fff;
+
+}
+.expediente{
+    width: 99%;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 2px 2px 1px #A9A9A9;
+}
+.contenidom4{
+    width: 99%;
+    padding: 30px;
+     box-shadow: 0px 0px 1px #A9A9A9;
+}
+.ingreso{
+    width: 55%;
+    float: left;
+    margin: 2px;
+}
+.monto{
+    width: 37%;
+    float: left;
+    margin: 2px;
+}
+.quinsena{
+    width: 50%;
+    margin: 27px auto;
+      box-shadow: 0px 0px 1px #A9A9A9;
+  text-align: center;
+ 
+}
+.quinsen{
+    width: 100%;
+    float: left;
+    
+}
+.com2{
+    width: 100%;
+    float: left;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+     box-shadow: 0px 0px 1px #A9A9A9;
+    float: left; 
+}
+.ingreso{
+    width: 30%;
+    float: left;
+}
+.deduciones{
+    width: 31%;
+    float: left;
+}
+.botones{
+    margin: 10px;
+    float: left;
+}
+.contenidosm2{
+    width: 100%;
+    float: right;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+     box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contm4{
+     width: 99%;
+    margin: 3px;
+    padding: 10px;
+    font-family: Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+}
+
+.contenidov{
+    width: 35%;
+    float: left;
+    font-family: Calibri;
+    margin: 5px;
+   
+}
+.contenidv{
+   width: 20%;
+    float: left;
+    font-family: Calibri;
+    margin: 5px;
+   
+}
+.conteniv{
+     width: 35%;
+    float: right;
+    font-family: Calibri;
+    margin: 5px;
+    
+}
+.contentv{
+    width: 99%;
+    margin: 4px;
+    float: left;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenl{
+    width: 50%;
+    font-family: Calibri;
+    float: left;
+    margin: 25px;
+}
+.contv{
+    width: 10%;
+    float: left;
+    margin: 25px;
+    font-family: Calibri;
+}
+.conntenidolm1{
+    width: 95%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.licencia{
+    width: 45%;
+    float: left;
+    margin: 1px;
+    padding: 5px;
+    font-family: Calibri;
+    
+}
+.exec{
+     width: 30%;
+    margin: 1px;
+    padding: 5px;
+    font-family: Calibri;
+   
+}
+.contenidlm2{
+   width: 95%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contentlm{
+     width: 20%;
+    float: left;
+    margin: 4px;
+    padding: 5px;
+    font-family: Calibri;
+    
+}
+.contenidolm3{
+   width: 100%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenidoms1{
+    width: 97%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contentms1{
+    width: 97%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenidoms2{
+    width: 97%;
+    margin: 1px;
+    padding: 30px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenidoms3{
+    width: 97%;
+    margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
+.empleadoms{
+    width: 20%;
+    float: left;
+    
+}
+.fechams{
+    width: 40%;
+    float: left;
+}
+.sueldoms{
+    width: 30%;
+    float: left;
+}
+.espacio{
+    width: 30%;
+}
+.contenidoi{
+    width: 30%;
+    float: left;
+      margin: 1px;
+    padding: 10px;
+    font-family: Calibri;
+    box-shadow: 0px 0px 1px #A9A9A9;
+}
+.contenidoi1{
+    width: 65%;
+    margin: 1px;
+     float: left;
+    padding: 10px;
+    font-family: Calibri;
+
+}
+.incapacidaddias{
+    width: 25%;
+    float: left;
+}
+.incapacidadhasta{
+    width: 35%;
+    float: left;
+}
+.table{
+    background-color: #eee;
+     height: 200px;
+}
+.Totalempleadov{
+    width: 35%;
+    float: left;
+}
+.contenidomi{
+    width: 90%;
+     box-shadow: 0px 0px 1px #A9A9A9;
+     float: right;
+}
+.heade{
+    width: 15%;
+    float: left;
+}
+.contenidomc{
+     width: 90%;
+     box-shadow: 0px 0px 1px #A9A9A9;
+     float: right
+}
+.contenidic1{
+    width: 35%;
+     box-shadow: 0px 0px 1px #A9A9A9;
+     float: left;
+     margin: 5px;
+     font-family: Calibri;
+     
+}
+.contenidic2{
+    width: 25%;
+     box-shadow: 0px 0px 1px #A9A9A9;
+     float: left;
+     margin: 5px;
+     font-family: Calibri;
+     
+}
+.contenidic3{
+    width: 30%;
+     box-shadow: 0px 0px 1px #A9A9A9;
+     float: right;
+     margin: 5px;
+     font-family: Calibri;
+     
+}
+
+header .nav ul {
+  list-style: none;
+  background-color: #337ab7;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+header .nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+
+}
+ 
+header .nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+header .nav a:hover {
+  background-color: #005f5f;
+}
+ 
+header .nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+   width: 180px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+ header .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }

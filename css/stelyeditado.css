@@ -1,0 +1,106 @@
+body{
+		background: #E5E4E2	;	
+	}
+	.nav{
+		background:#E5E4E2;
+		box-shadow: 0px 0px 1px grey;
+	}
+	.primerform{
+		width: 70%;
+		max-width:700px;
+		padding: 20px;
+		margin: auto;
+		background: #E5E4E2;
+		box-shadow: 0px 0px 1px grey;
+		float: left;
+	}
+	
+	img{
+		width: 23%;
+		padding:50px;
+		float: left;
+		
+	}
+	
+	.moversapellido{
+		width:85%;
+		float: right;
+	}
+	
+	div label{
+		width:22%;
+		float: left;
+		font-family:Arial;
+	}
+	
+	.codigo{
+		width: 10%;
+	}
+
+	.form-control{
+		width:28%;
+		float: left;
+		padding: 2px;
+	
+	}
+	
+	.segundoform{
+		width: 100%;
+		max-width:299px;
+		padding: 10px;
+		margin: auto;
+		background: #E5E4E2;
+		box-shadow: 0px 0px 1px grey;
+		float: right;
+	}
+	.encedulado{
+		float: right;
+		position: relative;
+	}
+	div.col-sm-4 .form-control{
+		width: 190%;
+		position: relative;
+	}
+	.tercerform{
+		width: 70%;
+		max-width:708px;
+		padding:5px;
+		margin:auto;
+		background: #E5E4E2;
+		box-shadow: 0px 0px 1px grey;
+		float: left;
+	}
+	.col-sm-8{
+		float: left;
+	}
+	.formalin{
+		float: right;
+	}
+	.verlabel{
+		float: left;
+	}
+	.cuartoform{
+		
+		width: 50%;
+		max-width:300px;
+		padding:8px;
+		margin:auto;
+		background: #E5E4E2;
+		box-shadow: 0px 0px 1px grey;
+		float: right;
+	}
+	.checkbox-inline{
+		float: left;
+	}
+	.botones{
+		width: 50%;
+		max-width:300px;
+		padding:10px;
+		margin:auto;
+		background: #E5E4E2;
+		box-shadow: 0px 0px 0px grey;
+		float: right;
+	}
+	button{
+		float: right;
+	}

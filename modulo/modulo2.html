@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sistema de nomina</title>
+        <meta name="description" content="">
+        <!-- Mobile Specific Metas
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="miestilo.css"/>
+        <script type="text/javascript" src="validar.js"></script>
+       
+    </head>
+    <body>
+        <header>
+        
+    <div class="nav">
+      <ul>
+        <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Datos  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="modulo1.html">Datos Generales </a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo2.html">Ubicacion</a></li>
+                    <li class="divider"></li>
+                <li><a href="modulo3.html">Sueldo</a></li>
+                <li class="divider"></li>
+                <li><a href="modulo4.html">Expediente</a></li>
+              </ul>
+            </li>
+          <li   class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Canvios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                 <li class="tutorials"><a class="active" href="vacaciones.html">Vacaciones</a></li>
+                  <li class="divider"></li>
+                <li class="about"><a href="licenciamedica.html">Licencia Medica</a></li>
+                  <li class="divider"></li>
+                 <li class="news"><a href="modificacionsueldo.html">Modificacion de Sueldo</a></li>
+                  <li class="divider"></li>
+                <li class="contact"><a href="incidencia.html">Incidencia</a></li>
+              </ul>
+            </li>
+       
+          <li class="contact"><a href="cierrenomina.html"> Nomina</a></li>
+      </ul>
+    </div>
+  </header>
+       
+        <section class="container">
+            <header class="header">
+              
+                    <ul class="nav nav-tabs" role="tablist">
+                         <li role="presentation" class="active"><a  href="modulo1.html">Datos generales</a></li>
+                         <li role="presentation"><a  href="modulo2.html">Ubicacion</a></li>
+                         <li role="presentation"><a  href="modulo3.html">Seldo</a></li>
+                         <li role="presentation"><a  href="modulo4.html">Expediente</a></li>
+                     </ul>
+
+            </header>
+           <form method="post" action="" name="formulario2">
+
+                 <div class="contenidom2" >
+                    
+                             <label style="width: 90%;">Tipo de empleado</label>
+                            <select name="empleado" id="empleado" class="form-control" style="width: 50%; ">
+				                   <option selected="selected" value="empleado">-Selecione el Tipo-</option>
+			                       <option value="fijo.">Fijo</option>
+                                   <option value="temporal.">Temporal</option>
+			                       <option value="pasante.">Pasante</option>
+			               </select>
+                             <label style="width: 90%;">Puesto</label>
+                            <select name="puesto" id="puesto" class="form-control" style="width: 50%; ">
+				                   <option selected="selected" value="puesto">-Selecione el puesto-</option>
+			                       <option value="secretaria.">Secretaria</option>
+                                   <option value="seguridad.">Seguridad</option>
+			                       <option value="tesorera.">Tesorera</option>
+			               </select>  
+                     </div>
+                <div class="contentm2">
+                     <label style="width: 90%;">Departamento</label>
+                            <select name="departamento" id="departamento" class="form-control" style="width: 95%; ">
+				                   <option selected="selected" value="departamento">-Selecione el Dpartamento-</option>
+			                       <option value="tecnologico.">Tecnologico</option>
+                                   <option value="humano.">Recursos Humano</option>
+			                       <option value="seguridad.">Seguridad</option>
+			               </select>
+                             <label for="horario" style="width: 90%;">Horario</label>
+                            <select name="horario" id="horario" class="form-control" style="width: 95%; ">
+				                   <option selected="selected" value="horario">-Selecione el Horario-</option>
+			                       <option value="completo.">08:00am-05:00pm</option>
+                                   <option value="mañana.">08:00am-12:00am</option>
+			                       <option value="tarde.">02:00pm-05:00pm</option>
+			               </select>  
+                </div><br>
+               <div class="contenm2">
+                <label for="asegurado" style="width: 30%; float: left;">Codigo de Asegurado</label>
+                    <label for="dependiente" style="width: 45%; float: left;">Numero de dependiente</label>
+                <input type="text" name="asegurado" id="asegurado" class="form-control"  style="width: 25%; float: left; margin: 10px;">
+                <input type="number" name="dependiente" id="dependiente" class="form-control" onkeypress="return soloparanumeros(event)" style="width: 25%; float: left; left; margin: 10px;">
+               </div>
+               <div class="contm2">
+               <label for="ingreso" style="width: 80%; float: left;">Fijar deduciones o ingreso mensual</label>
+                   <div class="ingreso">
+                   <select name="ingreso" id="ingreso" class="form-control" style="width: 100%; ">
+				                   <option selected="selected" value="ingreso">-Selecione-</option>
+			                       <option value=".">...</option>
+                                   <option value=".">...</option>
+			                       <option value=".">...</option>
+                       </select>
+                       </div>
+                <select multiple name="ingresos" size="4" class="form-control" style="width: 40%; float: right;">
+                             <option value="">...</option>
+                             <option value="" ></option>
+                             <option value="" ></option>
+                             <option value=""></option>
+                </select>
+                <div class="monto">
+                <input type="text" class="form-control" name="monto" id=" monto" placeholder="$0.00" onkeypress="return soloparanumeros(event)" style="width: 100%; float:left;"/> </div> <button type="button" class="btn btn-default" style="float: left;">Agregar</button>
+                 
+               </div>
+               <div class="conm2">
+                  <label  style="float: left;">Aplicar deduciones en:</label> <input type="checkbox"  style="float: left;" name="reingreso" checked/><br>
+                   <div class="quinsena">
+                     <div class="quinsen">
+                    <input type="radio" name="quinsena" style=" float: left;"/><label  style=" float: left;">Primera Quinsena</label>
+                    </div>
+                    <input type="radio" name="quinsena"  style="float: left;"/><label  style="float: left;">segunda quinsena</label> 
+                   </div> 
+               </div>
+               <div class="com2">
+                   <div class="ingreso">
+                       <div class="quinsen">
+                    <input type="radio" name="ingreso"  style=" float: left;"/><label  style=" float: left;">Aplicar ingreso y deduciones</label>
+                    </div>
+                    <input type="radio" name="ingreso" style="float: left;"/><label  style="float: left;">Excepto</label>   
+                   </div>
+                   <div class="deduciones">
+                      <select multiple name="interests" size="8" class="form-control" style="width: 100%; float: right;">
+                             <option value="">....</option>
+                             <option value="" ></option>
+                             <option value="" ></option>
+                             <option value=""></option>
+                      </select>
+                   </div>
+                   <div class="botones">
+                     <button id="" type="button" class="btn btn-inverse"> > </button><br>
+                      <button id="" type="button" class="btn btn-inverse"> > </button>   
+                   </div>
+                    <div class="deduciones">
+                      <select multiple name="interests1" size="8" class="form-control" style="width: 100%; float: right;">
+                             <option value="">...</option>
+                             <option value="" ></option>
+                             <option value="" ></option>
+                             <option value=""></option>
+                      </select>
+                   </div>
+               </div>
+             <section class="contenidosm2">
+                                    
+                                    <button type="submit" class="btn btn-inverse" onclick="return validar2()" >
+                                    <span class="glyphicon glyphicon-floppy-saved"></span>Gardar
+                                    </button>
+                                    <button type="button" class="btn btn-inverse" onclick="" >
+                                    <span class="glyphicon glyphicon-plus-sign"></span>Agregar
+                                    </button>
+                                   <button type="button" class="btn btn-inverse" onclick="reset()" >
+                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
+                                    </button>
+                                     <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" >
+                                    <span class="glyphicon glyphicon-log-out"></span>Salir
+                                    </button></a>
+                                </section> 
+           </form>
+                   
+           </section>
+
+       
+        <script>
+    $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+    });
+</script>
+        <script>
+        $(document).ready(function(){
+             $(".nav-tabs a").click(function(){
+                $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+        var x = $(event.target).text();         // active tab
+        var y = $(event.relatedTarget).text();  // previous tab
+        $(".act span").text(x);
+        $(".prev span").text(y);
+    });
+});
+</script>
+    </body>
+</html>
