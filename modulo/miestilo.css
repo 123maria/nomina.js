@@ -285,6 +285,13 @@ img{
     float: left;
       box-shadow: 0px 0px 1px #A9A9A9;
 }
+.contenidom6{
+     width: 74%;
+    margin: 20px;
+    padding: 5px;
+    float: right;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
 .contenidomms{
      width: 97%;
     margin: 1px;
@@ -318,15 +325,11 @@ img{
 #div1 {
      overflow:scroll;
      height:300px;
-     width: 80%;
-     margin: 50px;
+     width:  100%;
+   
      
 }
-#div1 table {
-    width:80%;
-    background-color:#fff;
 
-}
 .expediente{
     width: 99%;
     padding: 10px;
@@ -334,9 +337,11 @@ img{
       box-shadow: 2px 2px 1px #A9A9A9;
 }
 .contenidom4{
-    width: 99%;
-    padding: 30px;
-     box-shadow: 0px 0px 1px #A9A9A9;
+    width: 74%;
+    margin: 1px;
+    padding: 5px;
+    float: right;
+      box-shadow: 0px 0px 1px #A9A9A9;
 }
 .ingreso{
     width: 55%;
@@ -438,7 +443,7 @@ img{
     font-family: Calibri;
 }
 .conntenidolm1{
-    width: 95%;
+    width: 98%;
     margin: 1px;
     padding: 10px;
     font-family: Calibri;
@@ -460,7 +465,7 @@ img{
    
 }
 .contenidlm2{
-   width: 95%;
+   width: 98%;
     margin: 1px;
     padding: 10px;
     font-family: Calibri;
@@ -475,7 +480,7 @@ img{
     
 }
 .contenidolm3{
-   width: 100%;
+   width: 98%;
     margin: 1px;
     padding: 10px;
     font-family: Calibri;
@@ -526,9 +531,9 @@ img{
     width: 30%;
 }
 .contenidoi{
-    width: 30%;
+    width: 33%;
     float: left;
-      margin: 1px;
+      margin: 4px;
     padding: 10px;
     font-family: Calibri;
     box-shadow: 0px 0px 1px #A9A9A9;
@@ -541,6 +546,11 @@ img{
     font-family: Calibri;
 
 }
+.contenidoi2{
+    width: 100%;
+    float: left;
+      box-shadow: 0px 0px 1px #A9A9A9;
+}
 .incapacidaddias{
     width: 25%;
     float: left;
@@ -550,8 +560,8 @@ img{
     float: left;
 }
 .table{
-    background-color: #eee;
-     height: 200px;
+    background-color: #fff;
+     height: 150px;
 }
 .Totalempleadov{
     width: 35%;
@@ -627,18 +637,81 @@ header .nav a.active {
   color: #444;
   cursor: default;
 }
- 
+
 @media screen and (min-width: 600px) {
-  .nav li {
-   width: 180px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
+    .nav li {
+        width: 180px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+
+    /* Option 1 - Display Inline */
+    header .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+
+table {
+  table-layout: fixed;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0,0,0,.4);
+  border-collapse: collapse;
+}
+thead {
+  
+}
+th {
+  background: #1195b2;
+  color: #fff;
+  font-weight: 400;
+  padding: .7rem 0;
+  border: 3px solid #fff;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  width:auto;
+}
+th:last-child {width: auto;}
+tr:nth-child(even) {
+  background: rgba(17,149,178,.2);
+}
+td {
+  padding: .5rem 1rem;
+  border-right: 1px solid rgba(0,0,0,.05);
+}
+td:last-child {
+  border-right: 0 none;
+  text-align: center;
+}
+@media only screen and (max-width:100%) {
+  table{
+    width:100%;
   }
- 
-  /* Option 1 - Display Inline */
- header .nav li {
+  thead {display: none;}
+  tr {border-bottom: 2px solid rgba(17,149,178,.35);}
+  tr:last-child {border-bottom: 0 none;}
+  td {
+    display: block;
+    padding: .3rem .5rem;
+  }
+  td:before {
+    content: attr(data-head);
     display: inline-block;
-    margin-right: -4px;
+    width: auto;;
+    min-width: 40%;
+    font-weight: 900;
+    padding-right: 1rem;
+    font-variant: small-caps;
   }
+  td:last-child {text-align: left;}
+  td:nth-child(odd) {
+    background: rgba(17,149,178,.15);
+  }
+}
+.Totalempleadov{
+     font-family: Calibri;
+   
+}
