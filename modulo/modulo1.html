@@ -16,43 +16,8 @@
         
     </head>
     <body>
-       <header>
-        
-    <div class="nav">
-
-      <ul>
-          
-        <li   class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown">Datos  <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="modulo1.html" style="width: 25%;">Datos Generales </a></li>
-                    <li class="divider"></li>
-                <li><a href="modulo2.html">Ubicacion</a></li>
-                    <li class="divider"></li>
-                <li><a href="modulo3.html">Sueldo</a></li>
-                <li class="divider"></li>
-                <li><a href="modulo4.html">Expediente</a></li>
-              </ul>
-            </li>
-          <li   class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown">Canvios <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                 <li class="tutorials"><a class="active" href="vacaciones.html">Vacaciones</a></li>
-                  <li class="divider"></li>
-                <li class="about"><a href="licenciamedica.html">Licencia Medica</a></li>
-                  <li class="divider"></li>
-                 <li class="news"><a href="modificacionsueldo.html">Modificacion de Sueldo</a></li>
-                  <li class="divider"></li>
-                <li class="contact"><a href="incidencia.html">Incidencia</a></li>
-              </ul>
-            </li>
-       
-          <li class="contact"><a href="cierrenomina.html"> Nomina</a></li>
-           <li class="contact"><a href="menu.html"><span class="glyphicon glyphicon-log-out"></span>Salir</a></li>
-      </ul>
-    </div>
-  </header>
     
+  
         <section class="container">
             <header class="header">
               
@@ -98,13 +63,15 @@
           <section class="conten">
                
              
-                 <label style=" float: left;">Encedulado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="encedulado"/></label>
-                    <br><br>
-                 <label for="cedula" style="float: left;">Cedula o <br>Pasaporte:</label><br><input type="text" class="form-control" placeholder="Cedula o Pasaporte" name="cedula" id="cedula"  style="width: 55%; float: right; "/>
-                    <br><br>
-                 <label style="width: 30%; float: left;" for="fnacimiento" style="float: left;">Fecha de <br>Nacimiento:</label><br><input type="date" class="form-control" name="fnacimiento" id="fnacimiento" placeholder="aaaa-mm-dd" title="Siga el formato de la fecha" pattern="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$" style="width: 55%; float: right;"/>
-                    <br><br>
-                 <label style="width: 30%; float: left;" for="lnacimiento" style="float: left;">Lugar de <br>Nacimiento:</label><br><select name="lnacimiento" class="form-control" id="lnacimiento" style="width: 55%; float: right;" >
+                 <label style=" float: left; width: 90%;">Encedulado:<input type="checkbox" name="encedulado"/></label>
+                   <div class="iputmodulo1">  
+                 <label for="cedula" style="float: left; width: 40%;">Cedula o Pasaporte:</label><input type="text" class="form-control" placeholder="Cedula o Pasaporte" name="cedula" id="cedula"  style="width: 55%; float: right; "/>
+                 </div> 
+                <div class="iputmodulo1">  
+                 <label style="width: 30%; float: left;" for="fnacimiento" style="float: left;">Fecha de Nacimiento:</label><input type="date" class="form-control" name="fnacimiento" id="fnacimiento" placeholder="aaaa-mm-dd" title="Siga el formato de la fecha" pattern="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$" style="width: 55%; float: right;"/>
+                </div> 
+              <div class="iputmodulo1">  
+                 <label style="width: 30%; float: left;" for="lnacimiento" style="float: left;">Lugar de <br>Nacimiento:</label><select name="lnacimiento" class="form-control" id="lnacimiento" style="width: 55%; float: right;" >
 				                    <option selected="selected" value="selecionadopordefeto" >- Seleccione un pais -</option>
 				                    <option value="Brasil" >Brasil</option>
 				                    <option value="Afeganist�o">Afeganist�o</option>
@@ -357,7 +324,8 @@
 				                    <option value="Zimbabwe">Zimbabwe</option>
 				                    <option value="Z�mbia">Z�mbia</option>
 			                </select>
-                                     <br><br>
+                   </div> 
+                                    <div class="iputmodulo1"> 
                                           <label style="width: 30%; float: left;" for="nacionalidad" style="float: left;">Nacionalidad:</label><select name="nacionalidad" id="nacionalidad" class="form-control" style="width: 55%; float: right;" >
 				                            <option selected="selected" value="nacionalidad" >- Seleccione un pais -</option>
 				                            <option value="Brasil" >Brasil</option>
@@ -611,15 +579,15 @@
 				                            <option value="Zimbabwe">Zimbabwe</option>
 				                            <option value="Z�mbia">Z�mbia</option>
 			                            </select>
-                                                                            <br><br>
-
+                                     </div> 
+                                          <div class="iputmodulo1">   
                                            <label style="width: 30%; float: left;" for="sexo" style="float: left;">Sexo:</label><select name="sexo" id="sexo" class="form-control" style="width: 55%; float: right;">
 				                                    <option selected="selected" value="sexo">-Selecione el sexo-</option>
 			                                    <option value="femenino.">Femenino</option>
 			                                    <option value="masculino.">Masculino</option>
 			                                     </select>
-                                          <br><br>
-
+                                               </div> 
+                                          <div class="iputmodulo1"> 
                                            <label style="width: 30%; float: left;" for="sangre" style="float: left;">Tipo sangre:</label> <select name="sangre" id="sangre" class="form-control" style="width: 55%; float: right;">
 				                                    <option selected="selected" value="sangre">-Selecione el tipo de sangre -</option>
 			                                    <option value="o-.">O-</option>
@@ -631,7 +599,8 @@
 			                                    <option value="ab-.">AB-</option>
 			                                    <option value="ab+.">AB+</option>
 			                                    </select>
-                                       <br><br><br>
+                                        </div> 
+                                            <div class="iputmodulo1"> 
                                             <label style="width: 30%; " for="estatura" style="float: left;">Estatura:</label><select name="estatura" id="estatura" class="form-control" style="width: 55%; float: right;">
 				                                    <option selected="selected" value="estatura">-Selecione la Estatura -</option>
 			                                    <option value="estatura1.">152cm</option>
@@ -643,24 +612,28 @@
 			                                    <option value="estatura7.">198cm</option>
 			                                    <option value="estatura8.">mas de 198cm</option>
 			                                    </select>
-		                                 <br><br>
+		                                </div>
+                                         <div class="iputmodulo1"> 
                                             <label style="width: 30%; " for="camisa" style="float: left;">Camisa:</label><select name="camisa" id="camisa" class="form-control" style="width: 55%; float: right;">
 				                                   <option selected="selected">-Selecione la camisa-</option>
 			                                      <option value="small">S</option>
 			                                       <option value="midion">M</option>
                                                   <option value="large">L</option>
 			                                </select>
-                                        <br><br>
+                                       </div>
+                                            <div class="iputmodulo1">
                                             <label style="width: 30%; ;" for="pantalon" style="float: left;">Pantalon:</label><select name="pantalon" id="pantalon" class="form-control" style="width: 55%; float: right;">
 				                                     <option selected="selected">-Selecione el size-</option>
 			                                         <option value="small">S</option>
 			                                         <option value="midion">M</option>
                                                      <option value="large">L</option>
 			                                    </select>
+                                                 </div>
                                         </div>
                                     </div> 
                                  </section>
-                                <section class="contrnido3">
+                                    
+                                <section class="contenido3">
                                     
                                         <div>
                                             <label for="fdirecion">Direcion del Empleado:</label>
@@ -717,21 +690,7 @@
                                         </div>
                                     </div>
                                 </section>   
-                              <section class="contenido5">
-                                    <br><br><br><br>
-                                    <button type="submit" class="btn btn-inverse" onclick="return validar()" >
-                                    <span class="glyphicon glyphicon-floppy-saved"></span>Gardar
-                                    </button>
-                                    <button type="button" class="btn btn-inverse" onclick="" >
-                                    <span class="glyphicon glyphicon-plus-sign"></span>Agregar
-                                    </button>
-                                   <button type="button" class="btn btn-inverse" onclick="return linpiarform()" >
-                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
-                                    </button>
-                                    <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" >
-                                    <span class="glyphicon glyphicon-log-out"></span>Salir
-                                    </button></a>
-                                </section> 
+
                                  <section class="contenido4">
                                      <div><label>Estado</label></div>
                                     
@@ -740,12 +699,31 @@
                                      </div>
                                       <div style="width: 100%;">
                                          <label for="inactivo" style="float:left;">Inactivo:<input type="radio" name="estado" id="inactivo" style="float: right;"></label> 
-                                     </div><br><br><br>
+                                     </div>
                                      
-                                     <div style="width: 100%;">
+                                     <div style="width: 100%; float: left;">
                                          <label for="autorizar" style="float:left;"><input type="checkbox" name="autorizar" id="autorizar" style="float: left;">Autorizar Reingreso</label>  
                                      </div>        
                                    </section>
+
+                              <section class="contenido5">
+                                    <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-log-out"></span>Salir
+                                    </button></a>
+                                   <button type="button" class="btn btn-inverse" onclick="return linpiarform()" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
+                                    </button>
+                                    <button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;">
+                                    <span class="glyphicon glyphicon-plus-sign"></span>Agregar
+                                    </button>
+                                    <button type="submit" class="btn btn-inverse" onclick="return validar()" style="float: right; margin: 3px;" >
+                                    <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                                    </button>
+                                  
+                                  
+                                  
+                                </section> 
+                                
              
                                       
                                 
@@ -774,6 +752,6 @@
         $(".prev span").text(y);
     });
 });
-
+           </script>
     </body>
 </html>

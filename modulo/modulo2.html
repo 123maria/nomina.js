@@ -19,47 +19,14 @@
        
     </head>
     <body>
-        <header>
-        
-    <div class="nav">
-      <ul>
-        <li   class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown">Datos  <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="modulo1.html">Datos Generales </a></li>
-                    <li class="divider"></li>
-                <li><a href="modulo2.html">Ubicacion</a></li>
-                    <li class="divider"></li>
-                <li><a href="modulo3.html">Sueldo</a></li>
-                <li class="divider"></li>
-                <li><a href="modulo4.html">Expediente</a></li>
-              </ul>
-            </li>
-          <li   class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown">Canvios <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                 <li class="tutorials"><a class="active" href="vacaciones.html">Vacaciones</a></li>
-                  <li class="divider"></li>
-                <li class="about"><a href="licenciamedica.html">Licencia Medica</a></li>
-                  <li class="divider"></li>
-                 <li class="news"><a href="modificacionsueldo.html">Modificacion de Sueldo</a></li>
-                  <li class="divider"></li>
-                <li class="contact"><a href="incidencia.html">Incidencia</a></li>
-              </ul>
-            </li>
        
-          <li class="contact"><a href="cierrenomina.html"> Nomina</a></li>
-          <li class="contact"><a href="menu.html"><span class="glyphicon glyphicon-log-out"></span>Salir</a></li>
-      </ul>
-    </div>
-  </header>
        
         <section class="container">
             <header class="header">
               
                     <ul class="nav nav-tabs" role="tablist">
                          <li role="presentation" ><a  href="modulo1.html">Datos generales</a></li>
-                         <li role="presentation" ><a  href="modulo2.html">Ubicacion</a></li>
+                         <li role="presentation" class="active"><a  href="modulo2.html">Ubicacion</a></li>
                          <li role="presentation"><a  href="modulo3.html">Seldo</a></li>
                          <li role="presentation"><a  href="modulo4.html">Expediente</a></li>
                      </ul>
@@ -165,19 +132,21 @@
                    </div>
                </div>
              <section class="contenidosm2">
-                                    
-                                    <button type="submit" class="btn btn-inverse" onclick="return validar2()" >
-                                    <span class="glyphicon glyphicon-floppy-saved"></span>Gardar
-                                    </button>
-                                    <button type="button" class="btn btn-inverse" onclick="" >
-                                    <span class="glyphicon glyphicon-plus-sign"></span>Agregar
-                                    </button>
-                                   <button type="button" class="btn btn-inverse" onclick="reset()" >
-                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
-                                    </button>
-                                     <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" >
+                                      <a href="menu.html"><button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;" >
                                     <span class="glyphicon glyphicon-log-out"></span>Salir
                                     </button></a>
+                                    <button type="button" class="btn btn-inverse" onclick="reset()" style="float: right; margin: 3px;" >
+                                    <span class="glyphicon glyphicon-remove"></span>Nuevo
+                                    </button>
+                                    <button type="button" class="btn btn-inverse" onclick="" style="float: right; margin: 3px;" >
+                                    <span class="glyphicon glyphicon-plus-sign"></span>Agregar
+                                    </button>
+                                    <button type="submit" class="btn btn-inverse" onclick="return validar2()" style="float: right; margin: 3px;" >
+                                    <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                                    </button>
+                                    
+                                   
+                                   
                                 </section> 
            </form>
                    

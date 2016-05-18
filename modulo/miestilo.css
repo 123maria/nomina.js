@@ -5,10 +5,10 @@ body {
     width: 80%;
     padding-bottom: 15px;
     background: #DBE9F4;
-    float: left;
+ 
     box-shadow: 2px 2px 2px grey;
     height: auto;
-    margin: 90px;
+    margin: 80px;
     
 }
 
@@ -104,6 +104,7 @@ a{
 .contenidos{
     width: 70%;
      box-shadow: 0px 0px 1px #A9A9A9;
+     margin: 3px;
     float: left;
      font-family: Calibri;
     
@@ -155,10 +156,10 @@ img{
      font-family:Calibri;
     box-shadow: 0px 0px 1px #A9A9A9;
 }
-.contrnido3{
+.contenido3{
     width: 70%;
     float: left;
-    margin: 2px;
+    margin: 3px;
     font-family: Calibri;
      box-shadow: 0px 0px 1px #A9A9A9;
 }
@@ -181,7 +182,8 @@ img{
 }
 .contenido5 {
     width: 70%;
-    float: left;
+    float: right;
+    margin: 2px;
   box-shadow: 0px 0px 1px #A9A9A9;
 }
 .contenidom2{
@@ -280,9 +282,9 @@ img{
 }
 .contenidom3{
     width: 64%;
-    margin: 1px;
+    margin: 3px;
     padding: 5px;
-    float: left;
+    float: right;
       box-shadow: 0px 0px 1px #A9A9A9;
 }
 .contenidom6{
@@ -387,10 +389,10 @@ img{
     float: left;
 }
 .contenidosm2{
-    width: 100%;
+    width: 70%;
     float: right;
-    margin: 1px;
-    padding: 10px;
+    margin: 3px;
+  
     font-family: Calibri;
      box-shadow: 0px 0px 1px #A9A9A9;
 }
@@ -714,4 +716,8 @@ td:last-child {
 .Totalempleadov{
      font-family: Calibri;
    
+}
+.iputmodulo1{
+    width: 95%;
+    float: left;
 }
